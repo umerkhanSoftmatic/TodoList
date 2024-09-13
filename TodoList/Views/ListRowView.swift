@@ -1,6 +1,3 @@
-//
-//  ListRowView.swift
-
 
 import SwiftUI
 
@@ -18,21 +15,6 @@ struct ListRowView: View {
         .font(.title3)
     }
 }
-
-// MARK: just to check while coding
-
-//struct ListRowView_Previews: PreviewProvider {
-//    static var item1 = ItemModel(title: "First item!", isCompleted: false)
-//    static var item2 = ItemModel(title: "Second item!", isCompleted: true)
-//    
-//    static var previews: some View {
-//        Group {
-//            ListRowView(item: item1)
-//            ListRowView(item: item2)
-//        }
-//        .previewLayout(.sizeThatFits)
-//    }
-//}
 
 #Preview {
     ListRowView(item: ItemModel(title: "Hey", isCompleted: true))

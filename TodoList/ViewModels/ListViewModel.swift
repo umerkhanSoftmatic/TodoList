@@ -1,6 +1,3 @@
-//
-//  ListViewModel.swift
-//  File
 
 import Foundation
 
@@ -27,12 +24,6 @@ class ListViewModel: ObservableObject {  // We have made this ObservableObject a
     }
     
     func getItems() {
-//        let newItems = [
-//            ItemModel(title: "This is the first title!", isCompleted: true),
-//            ItemModel(title: "This is the second title!", isCompleted: false),
-//            ItemModel(title: "This is the third title!", isCompleted: true)
-//        ]
-//        items.append(contentsOf: newItems)
         
         guard let data = UserDefaults.standard.data(forKey: itemsKey) else { return }
         guard let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data) else {return}

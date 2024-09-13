@@ -1,5 +1,3 @@
-//
-//  NoItemsView.swift
 
 import SwiftUI
 

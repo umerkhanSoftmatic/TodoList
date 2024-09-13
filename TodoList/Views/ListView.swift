@@ -4,15 +4,8 @@ import SwiftUI
 
 struct ListView: View {
     
-    //Since items are in the model now and we do have our environment model so we dont need the items (array) now
-    
     @EnvironmentObject var listViewModel: ListViewModel
     
-//    @State var items: [ItemModel] = [
-//        ItemModel(title: "This is the first title!", isCompleted: true),
-//        ItemModel(title: "This is the second title!", isCompleted: false),
-//        ItemModel(title: "This is the third title!", isCompleted: true)
-//    ]
     
     var body: some View {
         ZStack {

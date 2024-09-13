@@ -1,7 +1,3 @@
-//
-//  TodoListApp.swift
-//  TodoList
-
 
 import SwiftUI
 
